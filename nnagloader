@@ -8,12 +8,12 @@ getgenv().NNAG = {
             Enabled = true,
             Mode = "Target",
             Toggle = "C",
-            Prediction = 0.11061,
-            Parts = {"Head","LowerTorso","UpperTorso"}
+            Prediction = 0.121,
+            Parts = {"Head", "LeftHand", "RightHand", "LeftLowerArm", "RightLowerArm", "LeftUpperArm", "RightUpperArm", "LeftFoot", "LeftLowerLeg", "UpperTorso", "HumanoidRootPart", "LeftUpperLeg", "RightLowerLeg", "RightFoot", "LowerTorso"}
         },
         FOV = {
             ShowFOV = false,
-            Radius = 35,
+            Radius = 20,
             Color = Color3.fromRGB(0, 71, 171),
             Filled = false,
             Transparency = 0.8
@@ -25,17 +25,17 @@ getgenv().NNAG = {
             Key = "C",
             UnlockKey = "Z",
             SmoothLock = true,
-            Smoothness = 0.0312,
+            Smoothness = 0.075,
             PredictMovement = true,
-            Prediction = 0.072,
-            Shake = true,
-            ShakeValue = 19,
-            Parts = {"Head"}
+            Prediction = 0.115,
+            Shake = false,
+            ShakeValue = 20,
+            Parts = {"HumanoidRootPart"}
         },
         FOV = {
             UseFOV = true,
-            ShowFOV = false,
-            Radius = 55,
+            ShowFOV = true,
+            Radius = 50,
             Color = Color3.fromRGB(0, 71, 171),
             Filled = false,
             Transparency = 0.4
@@ -50,10 +50,10 @@ getgenv().NNAG = {
     AutoPrediction = { -- Do NOT disable auto pred it will break ur script fixing next update
         Enabled = true,
         ping20_30 = 0.102,
-        ping30_40 = 0.107,
-        ping40_50 = 0.11,
-        ping50_60 = 0.12731,
-        ping60_70 = 0.12731,
+        ping30_40 = 0.125,
+        ping40_50 = 0.1256,
+        ping50_60 = 0.126,
+        ping60_70 = 0.1265,
         ping70_80 = 0.12951,
         ping80_90 = 0.13181,
         ping90_100 = 0.138,
@@ -69,8 +69,8 @@ getgenv().NNAG = {
         ping190_200 = 0.1865,
     },
     Key360 = {
-        Toggle = false,
-        RotationSpeed = 2500, -- higher you go the faster the spin. 2500 is good
+        Toggle = true,
+        RotationSpeed = 3500, -- higher you go the faster the spin. 2500 is good
         Keybind = Enum.KeyCode.V
     },
 }
@@ -96,7 +96,7 @@ function MainEventLocate()
     end
 end
 
--- 360 on bind made by prime >_<
+-- 360 on bind made by not me >_<
 local Players = game:GetService("Players")
 local UserInputService = game:GetService("UserInputService")
 local RunService = game:GetService("RunService")
