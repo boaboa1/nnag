@@ -34,11 +34,11 @@ getgenv().NNAG = {
         },
         FOV = {
             UseFOV = true,
-            ShowFOV = true,
+            ShowFOV = false,
             Radius = 50,
-            Color = Color3.fromRGB(0, 71, 171),
+            Color = Color3.fromRGB(255, 255, 255),
             Filled = false,
-            Transparency = 0.4
+            Transparency = 1
         }
     },
     Tracer = {
@@ -69,7 +69,7 @@ getgenv().NNAG = {
         ping190_200 = 0.1865,
     },
     Key360 = {
-        Toggle = true,
+        Toggle = false,
         RotationSpeed = 3500, -- higher you go the faster the spin. 2500 is good
         Keybind = Enum.KeyCode.V
     },
